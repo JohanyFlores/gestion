@@ -1,0 +1,30 @@
+[
+    {
+      "idUsuario": 1,
+      "nombre" : "Johany1",
+      "apellido_paterno" : "Flores",
+      "apellido_materno": "Mateos",
+      "edad": 30
+    },
+    {
+      "idUsuario": 2,
+        "nombre" : "Johany2",
+        "apellido_paterno" : "Flores",
+        "apellido_materno": "Mateos",
+        "edad": 30
+      },
+      {
+        "idUsuario": 3,
+        "nombre" : "Johany3",
+        "apellido_paterno" : "Flores",
+        "apellido_materno": "Mateos",
+        "edad": 30
+      },
+      {
+        "idUsuario": 4,
+        "nombre" : "Johany4",
+        "apellido_paterno" : "Flores",
+        "apellido_materno": "Mateos",
+        "edad": 30
+      }    
+  ]
