@@ -2,7 +2,26 @@
 Proposito del API 
 Responsable de la gestión de usuarios de un aplicativo generico
 
+Pasos para ambientar Mongo DB 
+Abrir docker
+Entrar con la terminal a la carpeta docker-obs del repositorio
+Levantar mongo dentro del yaml con docker compose
+    docker-compose -f docker_compose_obs.yaml up
+
+Agregar al contenedor de Mongo el archivo JSON a importar en la BD
+Que será utilizado en las pruebas de CRUD de la API
+
+    docker cp regsUsuarios.json mongodb:/regsUsuarios.json
+
+Importar a la BD los datos que se pasaron al contenedor
+
+    docker exec -it mongodb mongoimport --db obs --collection usuarios --file /regsUsuarios.json --jsonArray
+
+Puedes ver la información de los registros insertados con MongoDB Compass
+
+
 Metodo para consumir el API
+
 Entrar a la herramienta POSTMAN
 Seleccionar el metodo 
 Escribir la URL 
@@ -25,6 +44,8 @@ Parametros de salida:
             "edad": "30"
         },
         {
+
+
             "idUsuario": 1,
             "nombre": "johany",
             "apellido_paterno": "Flores",
